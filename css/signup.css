@@ -1,0 +1,127 @@
+html, body{
+    margin:0;
+    padding: 0;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, sans-serif;  
+    background-color: rgb(221, 209, 237);
+    background-size: cover;
+    width: 100%;
+    animation: fadeIn 0.1s ease-in;
+    box-sizing: border-box; 
+    overflow: hidden;
+} 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+a, button, img {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.header .logo img{
+    width: 200px;
+}
+
+
+.signupcontainer{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-container {
+  width: 320px;
+  padding: 25px;
+  border-radius: 14px;
+background-color: rgb(127, 41, 239);
+/* background-color: royalblue; */
+  color: #ffffff;
+}
+
+.signup-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-container label {
+  font-size: 17px;
+  margin-top: 12px;
+  font-weight: 750;
+  display: block;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.signup-container input::placeholder {
+  color: #eaeaea;
+}
+
+.signup-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background: #f2f2f2;
+}
+
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.social-buttons button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.google {
+  background: #db4437;
+  color: white;
+  font-size: 17px;
+}
+
+
+.login {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.login a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}

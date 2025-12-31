@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Campus One – Clubs</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pictures/CampusOne_transparent.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>CampusOne</title>
 </head>
+
 <body>
-<div class="app">
-    <header class="header">
-      <div class="brand">
-        
-        <img src="images/CampusOne_transparent.png" class="small-img">
-      </div>
-      <div class="profile">
-         <img src="images/user-solid-full.svg">
-      </div>
-    </header>
-    <div class="section-card">
-      <span class="icon">🏫</span>
-      <h2>Clubs</h2>
-    </div>
-   <div class="club-card">
-      <div class="club-left">
-        <div class="club-icon blue">C</div>
-        <div>
-          <h3>Coding Club</h3>
-          <span class="tag technical">TECHNICAL</span>
-        </div>
-      </div>
-      <button class="follow">Follow</button>
-      <p class="desc">Developing the future, one line at a time.</p>
-    </div>
-    <div class="club-card">
-      <div class="club-left">
-        <div class="club-icon pink">D</div>
-        <div>
-          <h3>Dance Club</h3>
-          <span class="tag cultural">CULTURAL</span>
-        </div>
-      </div>
-      <button class="follow">Follow</button>
-      <p class="desc">Expression through motion.</p>
+
+    
+<div class="header">
+    <div class="logo"><a href="./index.html"><img src="pictures/CampusOne_transparent.png" alt=""></a></div>
+    <div class="profile"><a href="./profile.html"><img src="icon/user-solid-full.svg" alt=""></a></div>
+</div>
+
+
+
+<div class="greet">
+    <div class="container">
+    <div class="hello"><h2>👋 Hello Aditya Raj !!</h2></div>
+    <!-- <div class="linear"><p>Success is temproary, Love is Permament</p></div> -->
+</div>
     </div>
 
-    <div class="club-card">
-      <div class="club-left">
-        <div class="club-icon blue">R</div>
-        <div>
-          <h3>Robotics Club</h3>
-          <span class="tag technical">TECHNICAL</span>
+<div class="quickSection">
+    <div class="qsTitle"><h2>✨ Quick Action</h2></div>
+    <div class="qsoptions">
+        <div class="row">
+            <button onclick="window.location.href = './lostAndFound.html'" class="qsbtn">🔍Dejaview</button>
+            <button onclick="window.location.href = './kart.html'" class="qsbtn">🛒MNNITkart</button>
         </div>
-      </div>
-      <button class="follow">Follow</button>
-      <p class="desc">Designing the machines of tomorrow.</p>
+        <div class="row">
+            <button onclick="window.location.href = './academia.html'" class="qsbtn">📚Academia</button>
+            <button class="qsbtn">💬Help Me</button>
+        </div>
     </div>
-    <nav class="bottom-nav">
-      <div class="nav-item active"><img src="images/house-solid-full.svg"></div>
-      <div class="nav-item"><span>Calendar</span></div>
-      <div class="nav-item"><span>Chats</span></div>
-    </nav>
+</div>
 
-  </div>
+
+<div class="todayEvents">
+    <div class="teTitle"><h2>📌 Today's Events</h2></div>
+    <div class="row">
+        <div class="event">
+            <h2>Robotics Workshop</h2>
+            <p>⏰ 10:00 AM</p>
+        </div>
+        <div class="event">
+            <h2>Swaarang</h2>
+            <p>⏰ 5:00 PM</p>
+        </div>
+        <div class="event">
+            <h2>Culrav</h2>
+            <p>⏰ 11:00 PM</p>
+        </div>
+    </div>
+</div>
+
+<div class="bottom-nav">
+<div class="bottom-nav-options">
+    <h4>Feedback</h4>
+    <h4>HackForge Team</h4>
+</div>
+<div class="copyHF">
+<p>&copyHackForge</p>
+</div>
+</div>
+ 
+
+<footer>
+        <div class="footerIcon"><a href="./index.html"><img src="icon/house-regular-full.svg" alt=""></a></div>
+        <div class="footerIcon"><a href="./club.html"><img src="icon/school-flag-solid-full.svg" alt="icon"></a></div>
+        <div class="footerIcon"><img src="icon/comment-solid-full.svg" alt=""></i></div>
+    </footer>
+
+
+
 
 </body>
 </html>
+
+
+
+

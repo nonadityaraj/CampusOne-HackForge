@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pictures/CampusOne_transparent.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="css/lostAndFound.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Lost and Found</title>
+    <script type="module" src="javascript/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="javascript/supabase.js" defer></script>
+
+
+</head> 
+<body>
+<div class="header">
+    <div class="logo"><a href="./index.html"><img src="pictures/CampusOne_transparent.png" alt=""></a></div>
+    <div class="profile"><a href="./profile.html"><img src="icon/user-solid-full.svg" alt=""></a></div>
+</div>
+
+
+
+<button class="open-btn" onclick="openModal()">Add Item</button>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-container">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            
+            <h2 class="modal-title">Item Details</h2>
+            
+           <form class="modal-form" id="itemForm">
+    <div class="form-group">
+        <label class="radio-label">
+            <input type="radio" name="type" value="lost" checked>
+            <span>Lost</span>
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="type" value="found">
+            <span>Found</span>
+        </label>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" id="itemName" name="itemName" placeholder="Item Name" required>
+    </div>
+    
+    <div class="form-group">
+        <textarea id="itemDescription" name="description" placeholder="Item Description" rows="3" required></textarea>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" id="location" name="place" placeholder="Place" required>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" id="contact" name="contact" placeholder="Contact" required>
+    </div>
+    
+    <div class="upload-area">
+                <input type="file" id="fileInput" accept="image/*,application/pdf,.doc,.docx,.txt" multiple>
+                <button type="button" onclick="uploadFile()">Upload File</button>
+            </div>
+
+
+
+            <div id="uploadProgress"></div>
+            <div id="uploadResult"></div>
+
+    <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
+
+</form>
+        </div>
+    </div>
+
+
+
+    <div class="itemsContainer">
+        <div class="item">
+            <div class="itemimg">
+                <img src="pictures/brain.jpg" alt=""></div>
+            <div class="description">
+                <span class="tag found">FOUND</span>
+                <h3>Found someone brain</h3>
+                <p>Found someone brain near ECE department</p>
+                <div class="details">
+                    <div class="location">
+                        <p>📍 ECE department</p>
+                    </div>
+                    <div class="contact"><p>📞 9473488640</p></div>
+                </div>
+                <div class="interact">
+                    <button class="clam">Claim It</button>
+                    <div class="share"><img style="width:40px; height:30px" src="icon/share-solid-full.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="itemimg">
+                <img src="pictures/shield.jpg" alt=""></div>
+            <div class="description">
+                <span class="tag lost">LOST</span>
+                <h3>Captain Lost his shield</h3>
+                <p>Captain America Lost his shield while dancing with Peggy</p>
+                <div class="details">
+                    <div class="location">
+                        <p>📍 Arena</p>
+                    </div>
+                    <div class="contact"><p>📞 9473488640</p></div>
+                </div>
+                <div class="interact">
+                    <button class="clam">Claim It</button>
+                    <div class="share"><img style="width:40px; height:30px" src="icon/share-solid-full.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="itemimg">
+                
+                <img src="pictures/heart.jpg" alt=""></div>
+            <div class="description">
+                <span class="tag lost">LOST</span>
+                <h3>Lost my Heart</h3>
+                <p>I lost my heart in culrav day 2.</p>
+                <div class="details">
+                    <div class="location">
+                        <p>📍 Athletic Ground</p>
+                    </div>
+                    <div class="contact"><p>📞 9473488640</p></div>
+                </div>
+                <div class="interact">
+                    <button class="clam">Claim It</button>
+                    <div class="share"><img style="width:40px; height:30px" src="icon/share-solid-full.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+
+<div class="toast" id="toast"></div>
+
+<footer>
+        <div class="footerIcon"><a href="./index.html"><img src="icon/house-regular-full.svg" alt=""></a></div>
+        <div class="footerIcon"><a href="./club.html"><img src="icon/school-flag-solid-full.svg" alt="icon"></a></div>
+        <div class="footerIcon"><img src="icon/comment-solid-full.svg" alt=""></i></div>
+    </footer>
+
+
+</body>
+
+</html>
